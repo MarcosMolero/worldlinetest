@@ -38,6 +38,8 @@
 		363C158620DE58F300F1A075 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C158020DE58F300F1A075 /* LandingViewController.swift */; };
 		363C158720DE58F300F1A075 /* LandingDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C158120DE58F300F1A075 /* LandingDependencyInjector.swift */; };
 		363C158820DE58F300F1A075 /* LandingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C158220DE58F300F1A075 /* LandingInteractor.swift */; };
+		36A9522A21905A6100C20516 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9522921905A6100C20516 /* RealmSwift.framework */; };
+		36A9522C21905B1500C20516 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9522B21905B1500C20516 /* Realm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		363C158020DE58F300F1A075 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		363C158120DE58F300F1A075 /* LandingDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingDependencyInjector.swift; sourceTree = "<group>"; };
 		363C158220DE58F300F1A075 /* LandingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingInteractor.swift; sourceTree = "<group>"; };
+		36A9522921905A6100C20516 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		36A9522B21905B1500C20516 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A9522C21905B1500C20516 /* Realm.framework in Frameworks */,
+				36A9522A21905A6100C20516 /* RealmSwift.framework in Frameworks */,
 				363C157B20DE561900F1A075 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +320,8 @@
 		363C157920DE561900F1A075 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36A9522B21905B1500C20516 /* Realm.framework */,
+				36A9522921905A6100C20516 /* RealmSwift.framework */,
 				363C157A20DE561900F1A075 /* Swinject.framework */,
 			);
 			name = Frameworks;
@@ -397,6 +405,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 			);
 			outputFileListPaths = (
 			);

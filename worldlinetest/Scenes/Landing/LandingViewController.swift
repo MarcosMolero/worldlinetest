@@ -9,6 +9,7 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 import UIKit
+import RealmSwift
 
 protocol LandingDisplayLogic: class {
     
