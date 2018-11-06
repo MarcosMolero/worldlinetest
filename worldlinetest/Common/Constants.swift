@@ -12,6 +12,14 @@ struct Constants {
     
     struct API {
         
+         static let BASE_URL = "http://t21services.herokuapp.com/"
         
+        struct PointsOI {
+            static let url = Constants.API.BASE_URL + "points"
+        }
+        
+        struct PointOI {
+            static let url = Constants.API.BASE_URL + "points/"
+        }
     }
 }

@@ -18,15 +18,14 @@ class NetworkAssembly: Assembly {
     }
     
     func registerStores() {
-        registerCustomStore()
+        registerPointOIStore()
     }
     
-    func registerCustomStore() {
-//        container.register(NewsStore.self) { container in
-//            let newsAPIStore = NewsAPIStore()
-//
-//            return newsAPIStore
-//        }
+    func registerPointOIStore() {
+        container.register(PointOIStore.self) { container in
+            let pointOIAPIStore = PointOIAPIStore()
+            return pointOIAPIStore
+        }
     }
     
 }

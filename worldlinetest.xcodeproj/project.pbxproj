@@ -24,13 +24,10 @@
 		363C155120DE422800F1A075 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C155020DE422800F1A075 /* Constants.swift */; };
 		363C155920DE4EE900F1A075 /* SerializableUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C155820DE4EE900F1A075 /* SerializableUtils.swift */; };
 		363C155C20DE4F3B00F1A075 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C155B20DE4F3B00F1A075 /* UIView.swift */; };
-		363C155F20DE4F9E00F1A075 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C155E20DE4F9E00F1A075 /* Custom.swift */; };
-		363C156520DE504800F1A075 /* Custom+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156420DE504800F1A075 /* Custom+Network.swift */; };
-		363C156920DE507D00F1A075 /* CustomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156820DE507D00F1A075 /* CustomStore.swift */; };
-		363C156E20DE514A00F1A075 /* CustomAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156D20DE514A00F1A075 /* CustomAPIStore.swift */; };
-		363C157020DE516700F1A075 /* CustomAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156F20DE516700F1A075 /* CustomAPIRouter.swift */; };
+		363C155F20DE4F9E00F1A075 /* PointOI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C155E20DE4F9E00F1A075 /* PointOI.swift */; };
+		363C156520DE504800F1A075 /* PointOI+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156420DE504800F1A075 /* PointOI+Network.swift */; };
+		363C156E20DE514A00F1A075 /* PointOIAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156D20DE514A00F1A075 /* PointOIAPIStore.swift */; };
 		363C157220DE518D00F1A075 /* CustomLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157120DE518D00F1A075 /* CustomLocalStore.swift */; };
-		363C157420DE51B300F1A075 /* CustomStoreWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157320DE51B300F1A075 /* CustomStoreWorker.swift */; };
 		363C157B20DE561900F1A075 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363C157A20DE561900F1A075 /* Swinject.framework */; };
 		363C158320DE58F300F1A075 /* LandingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157D20DE58F300F1A075 /* LandingPresenter.swift */; };
 		363C158420DE58F300F1A075 /* LandingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157E20DE58F300F1A075 /* LandingRouter.swift */; };
@@ -40,6 +37,15 @@
 		363C158820DE58F300F1A075 /* LandingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C158220DE58F300F1A075 /* LandingInteractor.swift */; };
 		36A9522A21905A6100C20516 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9522921905A6100C20516 /* RealmSwift.framework */; };
 		36A9522C21905B1500C20516 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9522B21905B1500C20516 /* Realm.framework */; };
+		36A9522F2190672200C20516 /* PointOIStoreWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9522E2190672200C20516 /* PointOIStoreWorker.swift */; };
+		36A952312190675100C20516 /* PointOIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952302190675100C20516 /* PointOIStore.swift */; };
+		36A952382190682800C20516 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952322190682800C20516 /* MainPresenter.swift */; };
+		36A952392190682800C20516 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952332190682800C20516 /* MainRouter.swift */; };
+		36A9523A2190682800C20516 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952342190682800C20516 /* MainModels.swift */; };
+		36A9523B2190682800C20516 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952352190682800C20516 /* MainViewController.swift */; };
+		36A9523C2190682800C20516 /* MainDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952362190682800C20516 /* MainDependencyInjector.swift */; };
+		36A9523D2190682800C20516 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952372190682800C20516 /* MainInteractor.swift */; };
+		36A9523F2191A51500C20516 /* PointOIRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9523E2191A51500C20516 /* PointOIRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,13 +68,10 @@
 		363C155020DE422800F1A075 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		363C155820DE4EE900F1A075 /* SerializableUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializableUtils.swift; sourceTree = "<group>"; };
 		363C155B20DE4F3B00F1A075 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		363C155E20DE4F9E00F1A075 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
-		363C156420DE504800F1A075 /* Custom+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Network.swift"; sourceTree = "<group>"; };
-		363C156820DE507D00F1A075 /* CustomStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStore.swift; sourceTree = "<group>"; };
-		363C156D20DE514A00F1A075 /* CustomAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAPIStore.swift; sourceTree = "<group>"; };
-		363C156F20DE516700F1A075 /* CustomAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAPIRouter.swift; sourceTree = "<group>"; };
+		363C155E20DE4F9E00F1A075 /* PointOI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOI.swift; sourceTree = "<group>"; };
+		363C156420DE504800F1A075 /* PointOI+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PointOI+Network.swift"; sourceTree = "<group>"; };
+		363C156D20DE514A00F1A075 /* PointOIAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIAPIStore.swift; sourceTree = "<group>"; };
 		363C157120DE518D00F1A075 /* CustomLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocalStore.swift; sourceTree = "<group>"; };
-		363C157320DE51B300F1A075 /* CustomStoreWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStoreWorker.swift; sourceTree = "<group>"; };
 		363C157A20DE561900F1A075 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		363C157D20DE58F300F1A075 /* LandingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPresenter.swift; sourceTree = "<group>"; };
 		363C157E20DE58F300F1A075 /* LandingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingRouter.swift; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 		363C158220DE58F300F1A075 /* LandingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingInteractor.swift; sourceTree = "<group>"; };
 		36A9522921905A6100C20516 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		36A9522B21905B1500C20516 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		36A9522E2190672200C20516 /* PointOIStoreWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIStoreWorker.swift; sourceTree = "<group>"; };
+		36A952302190675100C20516 /* PointOIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIStore.swift; sourceTree = "<group>"; };
+		36A952322190682800C20516 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		36A952332190682800C20516 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		36A952342190682800C20516 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		36A952352190682800C20516 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		36A952362190682800C20516 /* MainDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyInjector.swift; sourceTree = "<group>"; };
+		36A952372190682800C20516 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		36A9523E2191A51500C20516 /* PointOIRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIRealm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +234,8 @@
 		363C155D20DE4F6200F1A075 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				363C155E20DE4F9E00F1A075 /* Custom.swift */,
+				363C155E20DE4F9E00F1A075 /* PointOI.swift */,
+				36A9523E2191A51500C20516 /* PointOIRealm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,7 +253,7 @@
 		363C156120DE501100F1A075 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
-				363C156420DE504800F1A075 /* Custom+Network.swift */,
+				363C156420DE504800F1A075 /* PointOI+Network.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -248,7 +261,7 @@
 		363C156220DE501800F1A075 /* Workers */ = {
 			isa = PBXGroup;
 			children = (
-				363C157320DE51B300F1A075 /* CustomStoreWorker.swift */,
+				36A9522E2190672200C20516 /* PointOIStoreWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -266,7 +279,7 @@
 		363C156620DE505C00F1A075 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
-				363C156820DE507D00F1A075 /* CustomStore.swift */,
+				36A952302190675100C20516 /* PointOIStore.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -274,18 +287,9 @@
 		363C156720DE506300F1A075 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				363C156A20DE508F00F1A075 /* Router */,
-				363C156D20DE514A00F1A075 /* CustomAPIStore.swift */,
+				363C156D20DE514A00F1A075 /* PointOIAPIStore.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		363C156A20DE508F00F1A075 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				363C156F20DE516700F1A075 /* CustomAPIRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		363C156C20DE510300F1A075 /* Local */ = {
@@ -300,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				363C157620DE51E500F1A075 /* Landing */,
+				36A9522D21905C8C00C20516 /* Main */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -325,6 +330,19 @@
 				363C157A20DE561900F1A075 /* Swinject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36A9522D21905C8C00C20516 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				36A952362190682800C20516 /* MainDependencyInjector.swift */,
+				36A952372190682800C20516 /* MainInteractor.swift */,
+				36A952342190682800C20516 /* MainModels.swift */,
+				36A952322190682800C20516 /* MainPresenter.swift */,
+				36A952332190682800C20516 /* MainRouter.swift */,
+				36A952352190682800C20516 /* MainViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,30 +441,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363C157020DE516700F1A075 /* CustomAPIRouter.swift in Sources */,
-				363C155F20DE4F9E00F1A075 /* Custom.swift in Sources */,
+				36A9523F2191A51500C20516 /* PointOIRealm.swift in Sources */,
+				36A952392190682800C20516 /* MainRouter.swift in Sources */,
+				36A9523A2190682800C20516 /* MainModels.swift in Sources */,
+				36A9522F2190672200C20516 /* PointOIStoreWorker.swift in Sources */,
+				363C155F20DE4F9E00F1A075 /* PointOI.swift in Sources */,
 				363C158420DE58F300F1A075 /* LandingRouter.swift in Sources */,
+				36A952382190682800C20516 /* MainPresenter.swift in Sources */,
 				363C158520DE58F300F1A075 /* LandingModels.swift in Sources */,
 				363C155C20DE4F3B00F1A075 /* UIView.swift in Sources */,
+				36A9523B2190682800C20516 /* MainViewController.swift in Sources */,
 				363C154020DE412D00F1A075 /* DependencyInjectionManager.swift in Sources */,
 				363C158320DE58F300F1A075 /* LandingPresenter.swift in Sources */,
 				363C155120DE422800F1A075 /* Constants.swift in Sources */,
-				363C156920DE507D00F1A075 /* CustomStore.swift in Sources */,
 				363C155920DE4EE900F1A075 /* SerializableUtils.swift in Sources */,
 				363C158620DE58F300F1A075 /* LandingViewController.swift in Sources */,
+				36A9523D2190682800C20516 /* MainInteractor.swift in Sources */,
 				363C158720DE58F300F1A075 /* LandingDependencyInjector.swift in Sources */,
 				363C154B20DE417A00F1A075 /* SceneDependencyInjector.swift in Sources */,
 				363C154D20DE418C00F1A075 /* SwinjectViewControllerDependencyInjector.swift in Sources */,
-				363C156520DE504800F1A075 /* Custom+Network.swift in Sources */,
+				363C156520DE504800F1A075 /* PointOI+Network.swift in Sources */,
 				363C154420DE414600F1A075 /* ProductionDI.swift in Sources */,
-				363C156E20DE514A00F1A075 /* CustomAPIStore.swift in Sources */,
+				363C156E20DE514A00F1A075 /* PointOIAPIStore.swift in Sources */,
 				363C153C20DE410200F1A075 /* NetworkAssembly.swift in Sources */,
 				363C153E20DE411A00F1A075 /* BusinessAssembly.swift in Sources */,
 				363C157220DE518D00F1A075 /* CustomLocalStore.swift in Sources */,
 				363C158820DE58F300F1A075 /* LandingInteractor.swift in Sources */,
 				363C154220DE413A00F1A075 /* DIBuilder.swift in Sources */,
-				363C157420DE51B300F1A075 /* CustomStoreWorker.swift in Sources */,
 				363C154920DE416D00F1A075 /* ViewControllerDependencyInjector.swift in Sources */,
+				36A9523C2190682800C20516 /* MainDependencyInjector.swift in Sources */,
+				36A952312190675100C20516 /* PointOIStore.swift in Sources */,
 				363C151F20DE3F4500F1A075 /* AppDelegate.swift in Sources */,
 				363C154620DE415200F1A075 /* SwinjectDIManager.swift in Sources */,
 			);

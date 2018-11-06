@@ -20,29 +20,35 @@ class BusinessAssembly: Assembly {
     // ============================ INTERACTORS ============================
     private func registerInteractors() {
         registerLandingInteractor()
+        registerMainInteractor()
     }
     
     private func registerLandingInteractor() {
         container.register(LandingInteractor.self) { container in
-//            let authenticationStoreWorker = container.resolve(AuthenticationStoreWorker.self)!
             let interactor = LandingInteractor()
-//            interactor.authenticationStoreWorker = authenticationStoreWorker
-            
+            return interactor
+        }
+    }
+    
+    private func registerMainInteractor() {
+        container.register(MainInteractor.self) { container in
+            let pointOIStoreWorker = container.resolve(PointOIStoreWorker.self)!
+            let interactor = MainInteractor()
+            interactor.pointOIStoreWorker = pointOIStoreWorker
             return interactor
         }
     }
     
     // ============================ WORKERS ============================
     private func registerWorkers() {
-        registerCustomStoreWorker()
+        registerPointOIStoreWorker()
     }
     
-    private func registerCustomStoreWorker() {
-//        container.register(NewsStoreWorker.self) { container in
-//            let store = container.resolve(NewsStore.self)!
-//            let newsStoreWorker = NewsStoreWorker(store: store)
-//
-//            return newsStoreWorker
-//        }
+    private func registerPointOIStoreWorker() {
+        container.register(PointOIStoreWorker.self) { container in
+            let store = container.resolve(PointOIStore.self)!
+            let pointOIStoreWorker = PointOIStoreWorker(store: store)
+            return pointOIStoreWorker
+        }
     }
 }
