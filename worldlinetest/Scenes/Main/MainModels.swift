@@ -9,6 +9,7 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 //
 //  Type "usecase" for some magic!
+import MapKit
 
 enum MainScene {
     enum GetPointsOI {

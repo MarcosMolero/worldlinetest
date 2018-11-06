@@ -9,6 +9,7 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 import UIKit
+import MapKit
 
 protocol MainDisplayLogic: class {
     func displayPointsOI(viewModel: MainScene.GetPointsOI.ViewModel)
@@ -21,6 +22,9 @@ class MainViewController: UIViewController, MainDisplayLogic {
     var dependencyInjector:SceneDependencyInjector! = MainDependencyInjector()
     
     // MARK: Object lifecycle
+    @IBOutlet weak var mapView: MKMapView!
+    
+    var displayPointsOI: [MainScene.GetPointsOI.DisplayPointOI] = []
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -42,6 +46,9 @@ class MainViewController: UIViewController, MainDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         getPointsOI()
+//        setupLocation()
+        setupMap()
+        
     }
     
     // MARK: Requests
@@ -63,7 +70,9 @@ class MainViewController: UIViewController, MainDisplayLogic {
     
     // MARK: Display logic
     func displayPointsOI(viewModel: MainScene.GetPointsOI.ViewModel) {
+        self.displayPointsOI = viewModel.displayPointsOI
         savePointsOIToLocalDB(displayPointsOI: viewModel.displayPointsOI)
+        displayOnMap()
     }
 }
 

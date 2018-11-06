@@ -46,6 +46,8 @@
 		36A9523C2190682800C20516 /* MainDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952362190682800C20516 /* MainDependencyInjector.swift */; };
 		36A9523D2190682800C20516 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A952372190682800C20516 /* MainInteractor.swift */; };
 		36A9523F2191A51500C20516 /* PointOIRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9523E2191A51500C20516 /* PointOIRealm.swift */; };
+		36A9524121920C3B00C20516 /* MainViewController+CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9524021920C3B00C20516 /* MainViewController+CoreLocation.swift */; };
+		36A9524321920DC200C20516 /* MainViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9524221920DC200C20516 /* MainViewController+MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		36A952362190682800C20516 /* MainDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyInjector.swift; sourceTree = "<group>"; };
 		36A952372190682800C20516 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		36A9523E2191A51500C20516 /* PointOIRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIRealm.swift; sourceTree = "<group>"; };
+		36A9524021920C3B00C20516 /* MainViewController+CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CoreLocation.swift"; sourceTree = "<group>"; };
+		36A9524221920DC200C20516 /* MainViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+MapView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +345,8 @@
 				36A952322190682800C20516 /* MainPresenter.swift */,
 				36A952332190682800C20516 /* MainRouter.swift */,
 				36A952352190682800C20516 /* MainViewController.swift */,
+				36A9524021920C3B00C20516 /* MainViewController+CoreLocation.swift */,
+				36A9524221920DC200C20516 /* MainViewController+MapView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -455,6 +461,8 @@
 				363C158320DE58F300F1A075 /* LandingPresenter.swift in Sources */,
 				363C155120DE422800F1A075 /* Constants.swift in Sources */,
 				363C155920DE4EE900F1A075 /* SerializableUtils.swift in Sources */,
+				36A9524321920DC200C20516 /* MainViewController+MapView.swift in Sources */,
+				36A9524121920C3B00C20516 /* MainViewController+CoreLocation.swift in Sources */,
 				363C158620DE58F300F1A075 /* LandingViewController.swift in Sources */,
 				36A9523D2190682800C20516 /* MainInteractor.swift in Sources */,
 				363C158720DE58F300F1A075 /* LandingDependencyInjector.swift in Sources */,
