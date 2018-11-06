@@ -50,9 +50,20 @@ class MainViewController: UIViewController, MainDisplayLogic {
         interactor?.getPointsOI(request: request)
     }
     
+    func savePointsOIToLocalDB(displayPointsOI: [MainScene.GetPointsOI.DisplayPointOI]) {
+        var pointsOI: [PointOI] = []
+        for item in displayPointsOI {
+            let pointOI = PointOI(id: item.id, title: item.title, address: nil, transport: nil, email: nil, latitude: item.latitude, longitude: item.longitude, description: nil, phone: nil)
+            pointsOI.append(pointOI)
+        }
+        
+        let request = MainScene.SavePointsOIToLocalDB.Request(pointsOI: pointsOI)
+        interactor?.savePointsOIToLocalDB(request: request)
+    }
+    
     // MARK: Display logic
     func displayPointsOI(viewModel: MainScene.GetPointsOI.ViewModel) {
-        
+        savePointsOIToLocalDB(displayPointsOI: viewModel.displayPointsOI)
     }
 }
 

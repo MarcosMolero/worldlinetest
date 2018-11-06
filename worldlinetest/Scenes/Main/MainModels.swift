@@ -32,4 +32,20 @@ enum MainScene {
             let longitude: String
         }
     }
+    
+    enum SavePointsOIToLocalDB {
+        
+        struct Request {
+            let pointsOI: [PointOI]
+        }
+        
+        struct Response {
+            
+        }
+        
+        struct ViewModel {
+            
+        }
+    }
+    
 }

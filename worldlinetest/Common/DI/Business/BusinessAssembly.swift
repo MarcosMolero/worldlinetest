@@ -46,8 +46,8 @@ class BusinessAssembly: Assembly {
     
     private func registerPointOIStoreWorker() {
         container.register(PointOIStoreWorker.self) { container in
-            let store = container.resolve(PointOIStore.self)!
-            let pointOIStoreWorker = PointOIStoreWorker(store: store)
+            let stores = container.resolve([PointOIStore].self)!
+            let pointOIStoreWorker = PointOIStoreWorker(stores: stores)
             return pointOIStoreWorker
         }
     }

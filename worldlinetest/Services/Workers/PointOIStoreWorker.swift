@@ -11,17 +11,22 @@
 class PointOIStoreWorker {
     // MARK: Business Logic
  
-    let pointOIStore: PointOIStore!
+    let pointOIStores: [PointOIStore]!
     
-    init(store: PointOIStore) {
-        self.pointOIStore = store
+    init(stores: [PointOIStore]) {
+        self.pointOIStores = stores
     }
     
     func getPointsOI(completion: @escaping PointOIStoreGetPointsOICompletionHandler) {
-        pointOIStore.getPointsOI(completion: completion)
+        pointOIStores[0].getPointsOI(completion: completion)
     }
 
     func getPointOI(withId id: String, completion: @escaping PointOIStoreGetPointOICompletionHandler) {
-        pointOIStore.getPointOI(withId: id, completion: completion)
+        pointOIStores[0].getPointOI(withId: id, completion: completion)
     }
+    
+    func savePointsOI(with pointsOI: [PointOI], completion: @escaping PointOIStoreSavePointsOICompletionHandler) {
+        pointOIStores[1].savePointsOI(with: pointsOI, completion: completion)
+    }
+    
 }

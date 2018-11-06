@@ -46,4 +46,8 @@ class PointOIAPIStore: PointOIStore {
         
     }
     
+    func savePointsOI(with pointsOI: [PointOI], completion: @escaping PointOIStoreSavePointsOICompletionHandler) {
+
+    }
+    
 }

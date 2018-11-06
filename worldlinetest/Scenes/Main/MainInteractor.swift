@@ -10,6 +10,7 @@
 
 protocol MainBusinessLogic {
     func getPointsOI(request: MainScene.GetPointsOI.Request)
+    func savePointsOIToLocalDB(request: MainScene.SavePointsOIToLocalDB.Request)
 }
 
 protocol MainDataStore {
@@ -28,6 +29,19 @@ class MainInteractor: MainBusinessLogic, MainDataStore {
             case .success(let pointsOI):
                 let response = MainScene.GetPointsOI.Response(pointsOI: pointsOI)
                 self.presenter?.presentPointsOI(response: response)
+                break
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+                break
+            }
+        }
+    }
+    
+    func savePointsOIToLocalDB(request: MainScene.SavePointsOIToLocalDB.Request) {
+        pointOIStoreWorker.savePointsOI(with: request.pointsOI) { (result) in
+            switch result {
+            case .success:
+
                 break
             case .failure(let error):
                 debugPrint(error.localizedDescription)

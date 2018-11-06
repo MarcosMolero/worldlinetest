@@ -27,7 +27,7 @@
 		363C155F20DE4F9E00F1A075 /* PointOI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C155E20DE4F9E00F1A075 /* PointOI.swift */; };
 		363C156520DE504800F1A075 /* PointOI+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156420DE504800F1A075 /* PointOI+Network.swift */; };
 		363C156E20DE514A00F1A075 /* PointOIAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C156D20DE514A00F1A075 /* PointOIAPIStore.swift */; };
-		363C157220DE518D00F1A075 /* CustomLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157120DE518D00F1A075 /* CustomLocalStore.swift */; };
+		363C157220DE518D00F1A075 /* PointOIRealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157120DE518D00F1A075 /* PointOIRealmStore.swift */; };
 		363C157B20DE561900F1A075 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363C157A20DE561900F1A075 /* Swinject.framework */; };
 		363C158320DE58F300F1A075 /* LandingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157D20DE58F300F1A075 /* LandingPresenter.swift */; };
 		363C158420DE58F300F1A075 /* LandingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C157E20DE58F300F1A075 /* LandingRouter.swift */; };
@@ -71,7 +71,7 @@
 		363C155E20DE4F9E00F1A075 /* PointOI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOI.swift; sourceTree = "<group>"; };
 		363C156420DE504800F1A075 /* PointOI+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PointOI+Network.swift"; sourceTree = "<group>"; };
 		363C156D20DE514A00F1A075 /* PointOIAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIAPIStore.swift; sourceTree = "<group>"; };
-		363C157120DE518D00F1A075 /* CustomLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocalStore.swift; sourceTree = "<group>"; };
+		363C157120DE518D00F1A075 /* PointOIRealmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIRealmStore.swift; sourceTree = "<group>"; };
 		363C157A20DE561900F1A075 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		363C157D20DE58F300F1A075 /* LandingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPresenter.swift; sourceTree = "<group>"; };
 		363C157E20DE58F300F1A075 /* LandingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingRouter.swift; sourceTree = "<group>"; };
@@ -295,7 +295,7 @@
 		363C156C20DE510300F1A075 /* Local */ = {
 			isa = PBXGroup;
 			children = (
-				363C157120DE518D00F1A075 /* CustomLocalStore.swift */,
+				363C157120DE518D00F1A075 /* PointOIRealmStore.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -465,7 +465,7 @@
 				363C156E20DE514A00F1A075 /* PointOIAPIStore.swift in Sources */,
 				363C153C20DE410200F1A075 /* NetworkAssembly.swift in Sources */,
 				363C153E20DE411A00F1A075 /* BusinessAssembly.swift in Sources */,
-				363C157220DE518D00F1A075 /* CustomLocalStore.swift in Sources */,
+				363C157220DE518D00F1A075 /* PointOIRealmStore.swift in Sources */,
 				363C158820DE58F300F1A075 /* LandingInteractor.swift in Sources */,
 				363C154220DE413A00F1A075 /* DIBuilder.swift in Sources */,
 				363C154920DE416D00F1A075 /* ViewControllerDependencyInjector.swift in Sources */,
