@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3605B251219302FA005FCC1B /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24B219302FA005FCC1B /* DetailPresenter.swift */; };
+		3605B252219302FA005FCC1B /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24C219302FA005FCC1B /* DetailRouter.swift */; };
+		3605B253219302FA005FCC1B /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24D219302FA005FCC1B /* DetailModels.swift */; };
+		3605B254219302FA005FCC1B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24E219302FA005FCC1B /* DetailViewController.swift */; };
+		3605B255219302FA005FCC1B /* DetailDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24F219302FA005FCC1B /* DetailDependencyInjector.swift */; };
+		3605B256219302FA005FCC1B /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B250219302FA005FCC1B /* DetailInteractor.swift */; };
+		3605B258219319B1005FCC1B /* DetailViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B257219319B1005FCC1B /* DetailViewController+TableView.swift */; };
+		3605B25A21931CBF005FCC1B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B25921931CBF005FCC1B /* CustomCell.swift */; };
 		363C151F20DE3F4500F1A075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C151E20DE3F4500F1A075 /* AppDelegate.swift */; };
 		363C152420DE3F4500F1A075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C152220DE3F4500F1A075 /* Main.storyboard */; };
 		363C152620DE3F4700F1A075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C152520DE3F4700F1A075 /* Assets.xcassets */; };
@@ -51,6 +59,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3605B24B219302FA005FCC1B /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		3605B24C219302FA005FCC1B /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		3605B24D219302FA005FCC1B /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
+		3605B24E219302FA005FCC1B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3605B24F219302FA005FCC1B /* DetailDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDependencyInjector.swift; sourceTree = "<group>"; };
+		3605B250219302FA005FCC1B /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		3605B257219319B1005FCC1B /* DetailViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+TableView.swift"; sourceTree = "<group>"; };
+		3605B25921931CBF005FCC1B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		363C151B20DE3F4500F1A075 /* worldlinetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldlinetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363C151E20DE3F4500F1A075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363C152320DE3F4500F1A075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3605B24A219302E2005FCC1B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3605B24F219302FA005FCC1B /* DetailDependencyInjector.swift */,
+				3605B250219302FA005FCC1B /* DetailInteractor.swift */,
+				3605B24D219302FA005FCC1B /* DetailModels.swift */,
+				3605B24B219302FA005FCC1B /* DetailPresenter.swift */,
+				3605B24C219302FA005FCC1B /* DetailRouter.swift */,
+				3605B24E219302FA005FCC1B /* DetailViewController.swift */,
+				3605B257219319B1005FCC1B /* DetailViewController+TableView.swift */,
+				3605B25921931CBF005FCC1B /* CustomCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		363C151220DE3F4500F1A075 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +340,7 @@
 			children = (
 				363C157620DE51E500F1A075 /* Landing */,
 				36A9522D21905C8C00C20516 /* Main */,
+				3605B24A219302E2005FCC1B /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -461,6 +493,7 @@
 				363C158320DE58F300F1A075 /* LandingPresenter.swift in Sources */,
 				363C155120DE422800F1A075 /* Constants.swift in Sources */,
 				363C155920DE4EE900F1A075 /* SerializableUtils.swift in Sources */,
+				3605B258219319B1005FCC1B /* DetailViewController+TableView.swift in Sources */,
 				36A9524321920DC200C20516 /* MainViewController+MapView.swift in Sources */,
 				36A9524121920C3B00C20516 /* MainViewController+CoreLocation.swift in Sources */,
 				363C158620DE58F300F1A075 /* LandingViewController.swift in Sources */,
@@ -469,17 +502,24 @@
 				363C154B20DE417A00F1A075 /* SceneDependencyInjector.swift in Sources */,
 				363C154D20DE418C00F1A075 /* SwinjectViewControllerDependencyInjector.swift in Sources */,
 				363C156520DE504800F1A075 /* PointOI+Network.swift in Sources */,
+				3605B255219302FA005FCC1B /* DetailDependencyInjector.swift in Sources */,
 				363C154420DE414600F1A075 /* ProductionDI.swift in Sources */,
+				3605B253219302FA005FCC1B /* DetailModels.swift in Sources */,
 				363C156E20DE514A00F1A075 /* PointOIAPIStore.swift in Sources */,
 				363C153C20DE410200F1A075 /* NetworkAssembly.swift in Sources */,
 				363C153E20DE411A00F1A075 /* BusinessAssembly.swift in Sources */,
 				363C157220DE518D00F1A075 /* PointOIRealmStore.swift in Sources */,
 				363C158820DE58F300F1A075 /* LandingInteractor.swift in Sources */,
+				3605B254219302FA005FCC1B /* DetailViewController.swift in Sources */,
+				3605B256219302FA005FCC1B /* DetailInteractor.swift in Sources */,
 				363C154220DE413A00F1A075 /* DIBuilder.swift in Sources */,
 				363C154920DE416D00F1A075 /* ViewControllerDependencyInjector.swift in Sources */,
 				36A9523C2190682800C20516 /* MainDependencyInjector.swift in Sources */,
 				36A952312190675100C20516 /* PointOIStore.swift in Sources */,
 				363C151F20DE3F4500F1A075 /* AppDelegate.swift in Sources */,
+				3605B252219302FA005FCC1B /* DetailRouter.swift in Sources */,
+				3605B251219302FA005FCC1B /* DetailPresenter.swift in Sources */,
+				3605B25A21931CBF005FCC1B /* CustomCell.swift in Sources */,
 				363C154620DE415200F1A075 /* SwinjectDIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

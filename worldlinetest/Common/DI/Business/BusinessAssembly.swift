@@ -21,6 +21,7 @@ class BusinessAssembly: Assembly {
     private func registerInteractors() {
         registerLandingInteractor()
         registerMainInteractor()
+        registerDetailInteractor()
     }
     
     private func registerLandingInteractor() {
@@ -34,6 +35,15 @@ class BusinessAssembly: Assembly {
         container.register(MainInteractor.self) { container in
             let pointOIStoreWorker = container.resolve(PointOIStoreWorker.self)!
             let interactor = MainInteractor()
+            interactor.pointOIStoreWorker = pointOIStoreWorker
+            return interactor
+        }
+    }
+    
+    private func registerDetailInteractor() {
+        container.register(DetailInteractor.self) { container in
+            let pointOIStoreWorker = container.resolve(PointOIStoreWorker.self)!
+            let interactor = DetailInteractor()
             interactor.pointOIStoreWorker = pointOIStoreWorker
             return interactor
         }

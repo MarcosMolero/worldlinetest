@@ -29,4 +29,8 @@ class PointOIStoreWorker {
         pointOIStores[1].savePointsOI(with: pointsOI, completion: completion)
     }
     
+    func updatePointOI(with pointOI: PointOI, completion: @escaping PointOIStoreUpdatePointOICompletionHandler) {
+        pointOIStores[1].updatePointOI(with: pointOI, completion: completion)
+    }
+    
 }

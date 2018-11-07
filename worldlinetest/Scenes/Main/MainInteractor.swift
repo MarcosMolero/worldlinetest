@@ -11,16 +11,18 @@
 protocol MainBusinessLogic {
     func getPointsOI(request: MainScene.GetPointsOI.Request)
     func savePointsOIToLocalDB(request: MainScene.SavePointsOIToLocalDB.Request)
+    func savePointOIToDataStore(request: MainScene.SavePointOIToDataStore.Request)
 }
 
 protocol MainDataStore {
-    
+    var selectedPointOI: PointOI! {get set}
 }
 
 class MainInteractor: MainBusinessLogic, MainDataStore {
     
     var presenter: MainPresentationLogic?
     var pointOIStoreWorker: PointOIStoreWorker!
+    var selectedPointOI: PointOI!
     
     // MARK: Business logic
     func getPointsOI(request: MainScene.GetPointsOI.Request) {
@@ -49,4 +51,11 @@ class MainInteractor: MainBusinessLogic, MainDataStore {
             }
         }
     }
+    
+    func savePointOIToDataStore(request: MainScene.SavePointOIToDataStore.Request) {
+        selectedPointOI = request.pointOI
+    }
+
+    
+    
 }

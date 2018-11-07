@@ -35,8 +35,39 @@ class PointOIRealmStore: PointOIStore {
         
         let realm = try! Realm()
         
+        for item in pointsOIRealm {
+            if !objectExist(with: item.id!) {
+                try! realm.write {
+                    realm.add(item, update: false)
+                }
+            }
+        }
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+    }
+    
+    private func objectExist(with id: String) -> Bool {
+        return try! Realm().object(ofType: PointOIRealm.self, forPrimaryKey: id) != nil
+    }
+    
+    func updatePointOI(with pointOI: PointOI, completion: @escaping PointOIStoreUpdatePointOICompletionHandler) {
+        print("Hey, this gonna save your POI!!!")
+        
+        let pointOIRealm = PointOIRealm()
+        pointOIRealm.id = pointOI.id
+        pointOIRealm.title = pointOI.title
+        pointOIRealm.latitude = pointOI.latitude
+        pointOIRealm.longitude = pointOI.longitude
+        pointOIRealm.address = pointOI.address
+        pointOIRealm.transport = pointOI.transport
+        pointOIRealm.email = pointOI.email
+        pointOIRealm.desc = pointOI.description
+        pointOIRealm.phone = pointOI.phone
+        
+        let realm = try! Realm()
+        
         try! realm.write {
-            realm.add(pointsOIRealm)
+            realm.add(pointOIRealm, update: true)
         }
         
         print(Realm.Configuration.defaultConfiguration.fileURL)

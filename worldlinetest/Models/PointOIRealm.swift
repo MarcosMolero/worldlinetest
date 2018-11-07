@@ -21,11 +21,7 @@ class PointOIRealm: Object {
     @objc dynamic var desc: String?
     @objc dynamic var phone: String?
     
-//    init(id: String, title: String, latitude: String, longitude: String) {
-//        self.id = id
-//        self.title = title
-//        self.latitude = latitude
-//        self.longitude = longitude
-//    }
-    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
