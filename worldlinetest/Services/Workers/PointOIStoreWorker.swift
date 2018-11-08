@@ -33,4 +33,7 @@ class PointOIStoreWorker {
         pointOIStores[1].updatePointOI(with: pointOI, completion: completion)
     }
     
+    func getPointsOIFromDB(completion: @escaping PointOIStoreGetPointsOIFromDBCompletionHandler) {
+        pointOIStores[1].getPointsOIFromDB(completion: completion)
+    }
 }

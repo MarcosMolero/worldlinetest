@@ -12,12 +12,14 @@ protocol PointOIStore {
     func getPointOI(withId id: String, completion: @escaping PointOIStoreGetPointOICompletionHandler)
     func savePointsOI(with pointsOI: [PointOI], completion: @escaping PointOIStoreSavePointsOICompletionHandler)
     func updatePointOI(with pointOI: PointOI, completion: @escaping PointOIStoreUpdatePointOICompletionHandler)
+    func getPointsOIFromDB(completion: @escaping PointOIStoreGetPointsOIFromDBCompletionHandler)
 }
 
 typealias PointOIStoreGetPointsOICompletionHandler = (PointOIStoreResult<[PointOI]>) -> Void
 typealias PointOIStoreGetPointOICompletionHandler = (PointOIStoreResult<PointOI>) -> Void
 typealias PointOIStoreSavePointsOICompletionHandler = (PointOIStoreEmptyResult) -> Void
 typealias PointOIStoreUpdatePointOICompletionHandler = (PointOIStoreEmptyResult) -> Void
+typealias PointOIStoreGetPointsOIFromDBCompletionHandler = (PointOIStoreResult<[PointOI]>) -> Void
 
 enum PointOIStoreResult<U> {
     case success(result: U)

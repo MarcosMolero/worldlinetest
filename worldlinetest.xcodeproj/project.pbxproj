@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360432E321943CFF00CA553C /* SearchViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432E221943CFF00CA553C /* SearchViewController+TableView.swift */; };
+		360432E521943DEC00CA553C /* SearchViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432E421943DEC00CA553C /* SearchViewController+SearchBar.swift */; };
+		360432E92194519800CA553C /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432E82194519800CA553C /* BasicCell.swift */; };
 		3605B251219302FA005FCC1B /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24B219302FA005FCC1B /* DetailPresenter.swift */; };
 		3605B252219302FA005FCC1B /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24C219302FA005FCC1B /* DetailRouter.swift */; };
 		3605B253219302FA005FCC1B /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24D219302FA005FCC1B /* DetailModels.swift */; };
@@ -56,9 +59,18 @@
 		36A9523F2191A51500C20516 /* PointOIRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9523E2191A51500C20516 /* PointOIRealm.swift */; };
 		36A9524121920C3B00C20516 /* MainViewController+CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9524021920C3B00C20516 /* MainViewController+CoreLocation.swift */; };
 		36A9524321920DC200C20516 /* MainViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A9524221920DC200C20516 /* MainViewController+MapView.swift */; };
+		36D2CE8B2193650C0085FB7C /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2CE852193650C0085FB7C /* SearchPresenter.swift */; };
+		36D2CE8C2193650C0085FB7C /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2CE862193650C0085FB7C /* SearchRouter.swift */; };
+		36D2CE8D2193650C0085FB7C /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2CE872193650C0085FB7C /* SearchModels.swift */; };
+		36D2CE8E2193650C0085FB7C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2CE882193650C0085FB7C /* SearchViewController.swift */; };
+		36D2CE8F2193650C0085FB7C /* SearchDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2CE892193650C0085FB7C /* SearchDependencyInjector.swift */; };
+		36D2CE902193650C0085FB7C /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2CE8A2193650C0085FB7C /* SearchInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360432E221943CFF00CA553C /* SearchViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+TableView.swift"; sourceTree = "<group>"; };
+		360432E421943DEC00CA553C /* SearchViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchBar.swift"; sourceTree = "<group>"; };
+		360432E82194519800CA553C /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		3605B24B219302FA005FCC1B /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		3605B24C219302FA005FCC1B /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		3605B24D219302FA005FCC1B /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
@@ -110,6 +122,12 @@
 		36A9523E2191A51500C20516 /* PointOIRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOIRealm.swift; sourceTree = "<group>"; };
 		36A9524021920C3B00C20516 /* MainViewController+CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CoreLocation.swift"; sourceTree = "<group>"; };
 		36A9524221920DC200C20516 /* MainViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+MapView.swift"; sourceTree = "<group>"; };
+		36D2CE852193650C0085FB7C /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		36D2CE862193650C0085FB7C /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		36D2CE872193650C0085FB7C /* SearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
+		36D2CE882193650C0085FB7C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		36D2CE892193650C0085FB7C /* SearchDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDependencyInjector.swift; sourceTree = "<group>"; };
+		36D2CE8A2193650C0085FB7C /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +359,7 @@
 				363C157620DE51E500F1A075 /* Landing */,
 				36A9522D21905C8C00C20516 /* Main */,
 				3605B24A219302E2005FCC1B /* Detail */,
+				36D2CE84219364D90085FB7C /* Search */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -381,6 +400,22 @@
 				36A9524221920DC200C20516 /* MainViewController+MapView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		36D2CE84219364D90085FB7C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				36D2CE892193650C0085FB7C /* SearchDependencyInjector.swift */,
+				36D2CE8A2193650C0085FB7C /* SearchInteractor.swift */,
+				36D2CE872193650C0085FB7C /* SearchModels.swift */,
+				36D2CE852193650C0085FB7C /* SearchPresenter.swift */,
+				36D2CE862193650C0085FB7C /* SearchRouter.swift */,
+				36D2CE882193650C0085FB7C /* SearchViewController.swift */,
+				360432E221943CFF00CA553C /* SearchViewController+TableView.swift */,
+				360432E421943DEC00CA553C /* SearchViewController+SearchBar.swift */,
+				360432E82194519800CA553C /* BasicCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,21 +532,30 @@
 				36A9524321920DC200C20516 /* MainViewController+MapView.swift in Sources */,
 				36A9524121920C3B00C20516 /* MainViewController+CoreLocation.swift in Sources */,
 				363C158620DE58F300F1A075 /* LandingViewController.swift in Sources */,
+				36D2CE902193650C0085FB7C /* SearchInteractor.swift in Sources */,
 				36A9523D2190682800C20516 /* MainInteractor.swift in Sources */,
 				363C158720DE58F300F1A075 /* LandingDependencyInjector.swift in Sources */,
 				363C154B20DE417A00F1A075 /* SceneDependencyInjector.swift in Sources */,
+				360432E321943CFF00CA553C /* SearchViewController+TableView.swift in Sources */,
 				363C154D20DE418C00F1A075 /* SwinjectViewControllerDependencyInjector.swift in Sources */,
 				363C156520DE504800F1A075 /* PointOI+Network.swift in Sources */,
+				360432E92194519800CA553C /* BasicCell.swift in Sources */,
 				3605B255219302FA005FCC1B /* DetailDependencyInjector.swift in Sources */,
+				36D2CE8C2193650C0085FB7C /* SearchRouter.swift in Sources */,
 				363C154420DE414600F1A075 /* ProductionDI.swift in Sources */,
 				3605B253219302FA005FCC1B /* DetailModels.swift in Sources */,
 				363C156E20DE514A00F1A075 /* PointOIAPIStore.swift in Sources */,
+				36D2CE8F2193650C0085FB7C /* SearchDependencyInjector.swift in Sources */,
 				363C153C20DE410200F1A075 /* NetworkAssembly.swift in Sources */,
+				36D2CE8D2193650C0085FB7C /* SearchModels.swift in Sources */,
+				36D2CE8B2193650C0085FB7C /* SearchPresenter.swift in Sources */,
 				363C153E20DE411A00F1A075 /* BusinessAssembly.swift in Sources */,
 				363C157220DE518D00F1A075 /* PointOIRealmStore.swift in Sources */,
 				363C158820DE58F300F1A075 /* LandingInteractor.swift in Sources */,
 				3605B254219302FA005FCC1B /* DetailViewController.swift in Sources */,
+				360432E521943DEC00CA553C /* SearchViewController+SearchBar.swift in Sources */,
 				3605B256219302FA005FCC1B /* DetailInteractor.swift in Sources */,
+				36D2CE8E2193650C0085FB7C /* SearchViewController.swift in Sources */,
 				363C154220DE413A00F1A075 /* DIBuilder.swift in Sources */,
 				363C154920DE416D00F1A075 /* ViewControllerDependencyInjector.swift in Sources */,
 				36A9523C2190682800C20516 /* MainDependencyInjector.swift in Sources */,

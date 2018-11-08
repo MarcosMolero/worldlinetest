@@ -74,4 +74,7 @@ class PointOIAPIStore: PointOIStore {
         
     }
     
+    func getPointsOIFromDB(completion: @escaping PointOIStoreGetPointsOIFromDBCompletionHandler) {
+        
+    }
 }

@@ -72,4 +72,20 @@ class PointOIRealmStore: PointOIStore {
         
         print(Realm.Configuration.defaultConfiguration.fileURL)
     }
+    
+    func getPointsOIFromDB(completion: @escaping PointOIStoreGetPointsOIFromDBCompletionHandler) {
+        var result: PointOIStoreResult<[PointOI]>
+
+        var pointsOI: [PointOI] = []
+        let realm = try! Realm()
+        let pointsOIRealm = realm.objects(PointOIRealm.self)
+        
+        for item in pointsOIRealm {
+            let pointOI = PointOI(id: item.id!, title: item.title, address: item.address, transport: item.transport, email: item.email, latitude: item.latitude, longitude: item.longitude, description: item.desc, phone: item.phone)
+            pointsOI.append(pointOI)
+        }
+        
+        result = .success(result: pointsOI)
+        completion(result)   
+    }
 }
