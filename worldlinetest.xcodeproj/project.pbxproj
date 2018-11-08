@@ -10,6 +10,8 @@
 		360432E321943CFF00CA553C /* SearchViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432E221943CFF00CA553C /* SearchViewController+TableView.swift */; };
 		360432E521943DEC00CA553C /* SearchViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432E421943DEC00CA553C /* SearchViewController+SearchBar.swift */; };
 		360432E92194519800CA553C /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432E82194519800CA553C /* BasicCell.swift */; };
+		360432EB219455F100CA553C /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360432EA219455F100CA553C /* SVProgressHUD.framework */; };
+		360432ED2194561500CA553C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360432EC2194561500CA553C /* UIViewController.swift */; };
 		3605B251219302FA005FCC1B /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24B219302FA005FCC1B /* DetailPresenter.swift */; };
 		3605B252219302FA005FCC1B /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24C219302FA005FCC1B /* DetailRouter.swift */; };
 		3605B253219302FA005FCC1B /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605B24D219302FA005FCC1B /* DetailModels.swift */; };
@@ -71,6 +73,8 @@
 		360432E221943CFF00CA553C /* SearchViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+TableView.swift"; sourceTree = "<group>"; };
 		360432E421943DEC00CA553C /* SearchViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchBar.swift"; sourceTree = "<group>"; };
 		360432E82194519800CA553C /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		360432EA219455F100CA553C /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		360432EC2194561500CA553C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		3605B24B219302FA005FCC1B /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		3605B24C219302FA005FCC1B /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		3605B24D219302FA005FCC1B /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360432EB219455F100CA553C /* SVProgressHUD.framework in Frameworks */,
 				36A9522C21905B1500C20516 /* Realm.framework in Frameworks */,
 				36A9522A21905A6100C20516 /* RealmSwift.framework in Frameworks */,
 				363C157B20DE561900F1A075 /* Swinject.framework in Frameworks */,
@@ -280,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				363C155B20DE4F3B00F1A075 /* UIView.swift */,
+				360432EC2194561500CA553C /* UIViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -380,6 +386,7 @@
 		363C157920DE561900F1A075 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				360432EA219455F100CA553C /* SVProgressHUD.framework */,
 				36A9522B21905B1500C20516 /* Realm.framework */,
 				36A9522921905A6100C20516 /* RealmSwift.framework */,
 				363C157A20DE561900F1A075 /* Swinject.framework */,
@@ -498,6 +505,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -560,6 +568,7 @@
 				363C154920DE416D00F1A075 /* ViewControllerDependencyInjector.swift in Sources */,
 				36A9523C2190682800C20516 /* MainDependencyInjector.swift in Sources */,
 				36A952312190675100C20516 /* PointOIStore.swift in Sources */,
+				360432ED2194561500CA553C /* UIViewController.swift in Sources */,
 				363C151F20DE3F4500F1A075 /* AppDelegate.swift in Sources */,
 				3605B252219302FA005FCC1B /* DetailRouter.swift in Sources */,
 				3605B251219302FA005FCC1B /* DetailPresenter.swift in Sources */,

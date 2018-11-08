@@ -43,7 +43,8 @@ class DetailViewController: UIViewController, DetailDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        detailTableView.isHidden = true
+        showHUD()
         getPointOIDetail()
     }
     
@@ -85,7 +86,10 @@ class DetailViewController: UIViewController, DetailDisplayLogic {
         
         DispatchQueue.main.async {
             self.detailTableView.reloadData()
+            self.detailTableView.isHidden = false
+            self.hideHUD()
         }
+        
     }
 }
 

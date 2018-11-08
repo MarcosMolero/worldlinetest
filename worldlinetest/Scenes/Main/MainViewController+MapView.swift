@@ -36,38 +36,8 @@ extension MainViewController: MKMapViewDelegate {
         DispatchQueue.main.async {
             self.mapView.addAnnotations(annotations)
         }
-        debugPrint("I pointed the locations")
+        hideHUD()
     }
-    
-
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        debugPrint("Tapped Something, what should I do now?")
-
-//        let pin = MKAnnotationView(annotation: annotation, reuseIdentifier: "pin")
-//        pin.canShowCallout = true
-//        pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//
-//        pin.reloadInputViews()
-//        return pin
-
-//        guard let annotation = annotation as? Artwork else { return nil }
-
-//        var view: MKMarkerAnnotationView
-//        // 4
-//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: "marker")
-//            as? MKMarkerAnnotationView {
-//            dequeuedView.annotation = annotation
-//            view = dequeuedView
-//        } else {
-//            // 5
-//            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "marker")
-//            view.canShowCallout = true
-//            view.calloutOffset = CGPoint(x: -5, y: 5)
-//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//        }
-//        return MKAnnotationView()
-
-//    }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         
@@ -86,7 +56,4 @@ extension MainViewController: MKMapViewDelegate {
         }
         
     }
-    
-    
-    
 }

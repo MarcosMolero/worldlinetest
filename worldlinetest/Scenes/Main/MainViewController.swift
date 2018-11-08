@@ -45,6 +45,7 @@ class MainViewController: UIViewController, MainDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showHUD()
         getPointsOI()
     }
     
