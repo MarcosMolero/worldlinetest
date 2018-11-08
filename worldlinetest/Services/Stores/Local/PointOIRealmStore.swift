@@ -19,7 +19,6 @@ class PointOIRealmStore: PointOIStore {
     }
     
     func savePointsOI(with pointsOI: [PointOI], completion: @escaping PointOIStoreSavePointsOICompletionHandler) {
-        print("Hey dude, this gonna save your locations!")
         
         var pointsOIRealm: [PointOIRealm] = []
         
@@ -43,7 +42,7 @@ class PointOIRealmStore: PointOIStore {
             }
         }
         
-        print(Realm.Configuration.defaultConfiguration.fileURL)
+        debugPrint(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     private func objectExist(with id: String) -> Bool {
@@ -51,7 +50,6 @@ class PointOIRealmStore: PointOIStore {
     }
     
     func updatePointOI(with pointOI: PointOI, completion: @escaping PointOIStoreUpdatePointOICompletionHandler) {
-        print("Hey, this gonna save your POI!!!")
         
         let pointOIRealm = PointOIRealm()
         pointOIRealm.id = pointOI.id
@@ -70,7 +68,7 @@ class PointOIRealmStore: PointOIStore {
             realm.add(pointOIRealm, update: true)
         }
         
-        print(Realm.Configuration.defaultConfiguration.fileURL)
+        debugPrint(Realm.Configuration.defaultConfiguration.fileURL!)
     }
     
     func getPointsOIFromDB(completion: @escaping PointOIStoreGetPointsOIFromDBCompletionHandler) {
